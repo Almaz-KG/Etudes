@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="images/favicon.ico"> -->
+
+    <title>Conway's game of life</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="styles/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Etudes</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Game of life</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="main-title">
+        <h1>Conway's game of life</h1>
+        <p class="lead">The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970</p>
+      </div>
+      <div class="canvas-container">
+        <button type="button" class="btn btn-primary aria-pressed='false'" onclick="startButtonClicked()">Start</button>
+
+        <button type="button" class="btn btn-primary aria-pressed='false'" onclick="stopButtonClicked()">Stop</button>
+
+        <canvas id="game-of-life-border"></canvas>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/game-of-life.js"></script>
+   </body>
+</html>
